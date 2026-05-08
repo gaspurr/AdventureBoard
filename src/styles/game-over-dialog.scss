@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+.game-over__title {
+  color: $color-danger;
+}
+
+.game-over__content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  min-width: 320px;
+}
+
+.game-over__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: $spacing-md;
+}
+
+.game-over__label {
+  color: $color-text-muted;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.game-over__value {
+  color: $color-text;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.game-over__actions {
+  padding: $spacing-md $spacing-lg !important;
+}

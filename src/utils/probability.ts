@@ -1,5 +1,3 @@
-// Maps the API's free-text probability strings onto a 0–1 scale so we can
-// compare ads numerically. Tune these once we've seen real game data.
 
 export const PROBABILITY_SCORE: Record<string, number> = {
   "Piece of cake": 0.95,
@@ -18,7 +16,6 @@ export const PROBABILITY_SCORE: Record<string, number> = {
 export const getProbabilityScore = (probability: string): number => {
   const score = PROBABILITY_SCORE[probability];
   if (score === undefined) {
-    // Don't crash on unseen strings — log and treat conservatively.
     console.warn(`Unknown probability string: "${probability}"`);
     return 0.3;
   }

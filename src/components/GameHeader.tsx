@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { formatLives } from "@/utils/format";
 import type { GameState } from "@/types/game";
-import "./GameHeader.scss";
 
 type GameHeaderProps = {
   game: GameState;

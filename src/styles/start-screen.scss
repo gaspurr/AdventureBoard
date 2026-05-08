@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+.start-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $spacing-lg;
+}
+
+.start-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-lg;
+  text-align: center;
+  max-width: 540px;
+}
+
+.start-screen__title {
+  color: $color-accent;
+  font-weight: 700;
+}
+
+.start-screen__tagline {
+  color: $color-text-muted;
+}
+
+.start-screen__button {
+  margin-top: $spacing-md;
+}
+
+.start-screen__error {
+  color: $color-danger;
+  margin-top: $spacing-sm;
+}

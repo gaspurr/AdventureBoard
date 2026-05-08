@@ -1,0 +1,36 @@
+@use "./variables" as *;
+
+.game-header {
+  display: flex;
+  gap: $spacing-lg;
+  padding: $spacing-md $spacing-lg;
+  background-color: $color-bg-elevated;
+  border-radius: $radius-md;
+  margin-bottom: $spacing-lg;
+  flex-wrap: wrap;
+}
+
+.game-header__stat {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+  min-width: 80px;
+}
+
+.game-header__label {
+  font-size: 0.75rem;
+  color: $color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.game-header__value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.game-header__value--lives {
+  color: $color-danger;
+  letter-spacing: 0.1em;
+}

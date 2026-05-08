@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from "@mui/material";
-import "./StartScreen.scss";
 
 type StartScreenProps = {
   onStart: () => void;

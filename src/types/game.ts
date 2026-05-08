@@ -19,7 +19,6 @@ export type Ad = {
   message: string;
   reward: number;
   expiresIn: number;
-  // 1 = base64, 2 = ROT13, null = plaintext.
   encrypted: number | null;
   probability: string;
 };

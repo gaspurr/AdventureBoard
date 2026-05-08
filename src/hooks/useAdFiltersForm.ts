@@ -17,8 +17,6 @@ export const DEFAULT_AD_FILTERS: AdFiltersValues = {
   riskThreshold: "all",
 };
 
-// RHF form hook only — no derived state or side effects live here. Filtering
-// logic is in utils/filterAds.ts so the form stays focused on form concerns.
 export const useAdFiltersForm = () => {
   const form = useForm<AdFiltersValues>({
     defaultValues: DEFAULT_AD_FILTERS,

@@ -1,5 +1,4 @@
-// Encrypted ads come back with `adId`, `message` and `probability` all encoded.
-// Encrypted flag values observed: 1 = base64, 2 = ROT13.
+
 
 const decodeBase64 = (input: string): string => {
   try {

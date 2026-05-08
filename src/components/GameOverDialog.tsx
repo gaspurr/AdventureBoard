@@ -7,7 +7,6 @@ import {
   Typography,
 } from "@mui/material";
 import type { GameState } from "@/types/game";
-import "./GameOverDialog.scss";
 
 type GameOverDialogProps = {
   open: boolean;

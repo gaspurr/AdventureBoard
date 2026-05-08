@@ -5,14 +5,13 @@ import { useAds } from "@/hooks/useAds";
 import { useSolveAd } from "@/hooks/useSolveAd";
 import { useShop } from "@/hooks/useShop";
 import { buildGutFeelingMap } from "@/utils/scoring";
-import { StartScreen } from "@/components/StartScreen/StartScreen";
-import { GameHeader } from "@/components/GameHeader/GameHeader";
-import { AdsTable } from "@/components/AdsTable/AdsTable";
-import { ShopTable } from "@/components/ShopTable/ShopTable";
-import { SolveResultSnackbar } from "@/components/SolveResultSnackbar/SolveResultSnackbar";
-import { PurchaseResultSnackbar } from "@/components/PurchaseResultSnackbar/PurchaseResultSnackbar";
-import { GameOverDialog } from "@/components/GameOverDialog/GameOverDialog";
-import "./MainPage.scss";
+import { StartScreen } from "@/components/StartScreen";
+import { GameHeader } from "@/components/GameHeader";
+import { AdsTable } from "@/components/AdsTable";
+import { ShopTable } from "@/components/ShopTable";
+import { SolveResultSnackbar } from "@/components/SolveResultSnackbar";
+import { PurchaseResultSnackbar } from "@/components/PurchaseResultSnackbar";
+import { GameOverDialog } from "@/components/GameOverDialog";
 
 export const MainPage = () => {
   const {
