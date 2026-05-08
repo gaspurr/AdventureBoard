@@ -1,0 +1,140 @@
+@use "./variables" as *;
+
+.ad-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+  align-items: center;
+  padding: $spacing-md;
+  background-color: rgba(255, 183, 77, 0.04);
+  border-radius: $radius-md;
+  margin-bottom: $spacing-md;
+}
+
+.ad-filters__field {
+  min-width: 140px;
+}
+
+.ad-filters__field--search {
+  flex: 1 1 220px;
+}
+
+.ad-filters__reset {
+  margin-left: auto;
+}
+
+.shop-table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+  gap: $spacing-md;
+}
+
+.shop-table__title {
+  color: $color-text;
+}
+
+.shop-table__header-actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+}
+
+.shop-table__balance {
+  color: $color-accent;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.shop-table__container {
+  background-color: $color-bg-elevated !important;
+}
+
+.shop-table__row:hover {
+  background-color: rgba(128, 203, 196, 0.04);
+}
+
+.shop-table__buy {
+  min-width: 96px;
+}
+
+.shop-table__loading {
+  display: flex;
+  justify-content: center;
+  padding: $spacing-xl;
+}
+
+.shop-table__empty {
+  color: $color-text-muted;
+  padding: $spacing-lg !important;
+}
+
+.shop-table__error {
+  color: $color-danger;
+  margin-bottom: $spacing-md;
+}
+
+.ads-table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+  gap: $spacing-md;
+}
+
+.ads-table__title-group {
+  display: flex;
+  align-items: baseline;
+  gap: $spacing-md;
+}
+
+.ads-table__title {
+  color: $color-text;
+}
+
+.ads-table__count {
+  color: $color-text-muted;
+  font-size: 0.85rem;
+}
+
+.ads-table__container {
+  background-color: $color-bg-elevated !important;
+}
+
+.ads-table__row:hover {
+  background-color: rgba(255, 183, 77, 0.04);
+}
+
+.ads-table__row--top {
+  background-color: rgba(129, 199, 132, 0.08);
+  box-shadow: inset 3px 0 0 $color-success;
+}
+
+.ads-table__message {
+  max-width: 460px;
+}
+
+.ads-table__gut {
+  font-weight: 600;
+}
+
+.ads-table__solve {
+  min-width: 72px;
+}
+
+.ads-table__loading {
+  display: flex;
+  justify-content: center;
+  padding: $spacing-xl;
+}
+
+.ads-table__empty {
+  color: $color-text-muted;
+  padding: $spacing-lg !important;
+}
+
+.ads-table__error {
+  color: $color-danger;
+  margin-bottom: $spacing-md;
+}
