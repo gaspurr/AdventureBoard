@@ -12,8 +12,7 @@ export const sortByExpectedValue = (ads: Ad[]): Ad[] =>
 export const findRecommendedAd = (ads: Ad[]): Ad | null =>
   ads.length === 0 ? null : sortByExpectedValue(ads)[0];
 
-// More lives → losing one is cheap → can take bigger gambles.
-// One life left → losing means game over → only sure things make sense
+
 const lifeValueFor = (lives: number): number => {
   if (lives <= 1) return 200;
   if (lives === 2) return 60;

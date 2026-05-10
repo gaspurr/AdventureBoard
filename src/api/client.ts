@@ -1,4 +1,4 @@
-// Vite proxies /api → https://dragonsofmugloar.com (see vite.config.ts).
+// vite proxied /api
 const API_BASE = "/api/v2";
 
 type RequestOptions = {

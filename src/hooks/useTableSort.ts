@@ -1,8 +1,6 @@
 import { useCallback, useState } from "react";
 import type { SortDirection } from "@/types/sort";
 
-// Generic sort-state hook. Clicking the active column toggles direction;
-// clicking a different column sets it to the new field with a desc default.
 export const useTableSort = <Field extends string>(
   initialField: Field,
   initialDirection: SortDirection = "desc"

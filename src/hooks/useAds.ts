@@ -21,7 +21,6 @@ export const useAds = (gameId: string | null) => {
     }
   }, [gameId]);
 
-  // Auto-fetch whenever the gameId changes (including on first set).
   useEffect(() => {
     if (gameId) refresh();
   }, [gameId, refresh]);

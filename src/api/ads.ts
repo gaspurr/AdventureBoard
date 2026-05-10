@@ -8,8 +8,8 @@ export const solveAd = (
   gameId: string,
   adId: string
 ): Promise<SolveResult> => {
-  // Encrypted ads can come back with base64-padded IDs ("...="). The API
-  // rejects those when they end up in the URL path, so strip trailing "=".
+
+  //strip trailing "=" from adId since they caused failing API calls
   const sanitizedAdId = adId.replace(/=+$/, "");
   return apiRequest<SolveResult>(`/${gameId}/solve/${sanitizedAdId}`, {
     method: "POST",
