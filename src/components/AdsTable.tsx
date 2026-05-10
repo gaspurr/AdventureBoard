@@ -15,7 +15,6 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import { decodeMessage } from "@/utils/decoder";
 import { gutFeelingChipColor } from "@/utils/scoring";
 import { sortAds } from "@/utils/sortAds";
 import type { AdSortField } from "@/utils/sortAds";
@@ -129,13 +128,13 @@ export const AdsTable = ({
                     className={`ads-table__row${isTopPick ? " ads-table__row--top" : ""}`}
                   >
                     <TableCell className="ads-table__message">
-                      {decodeMessage(ad.message, ad.encrypted)}
+                      {ad.message}
                     </TableCell>
                     <TableCell align="right">
                       {Number(ad.reward)}
                     </TableCell>
                     <TableCell>
-                      {decodeMessage(ad.probability, ad.encrypted)}
+                      {ad.probability}
                     </TableCell>
                     <TableCell align="right">{ad.expiresIn}</TableCell>
                     <TableCell>

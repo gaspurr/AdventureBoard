@@ -3,14 +3,6 @@ import type { Ad, GameState, PurchaseResult, ShopItem, SolveResult } from "../sr
 import { getGutFeelingScore } from "../src/utils/scoring";
 import { getRiskLevel } from "../src/utils/probability";
 import type { RiskLevel } from "../src/utils/probability";
-import { decodeMessage } from "../src/utils/decoder";
-
-const normalizeAd = (ad: Ad): Ad => ({
-  ...ad,
-  message: decodeMessage(ad.message, ad.encrypted),
-  probability: decodeMessage(ad.probability, ad.encrypted),
-});
-
 const API_BASE =
   process.env.API_BASE?.replace(/\/$/, "") ??
   "https://dragonsofmugloar.com/api/v2";
@@ -281,7 +273,7 @@ const run = async () => {
         console.warn("No ads from API; waiting before refetch.");
         await sleep(2000);
       }
-      messageCache = rawAdsFromApi.map(normalizeAd);
+      messageCache = rawAdsFromApi;
       // Drop ignore entries for ids no longer on the board; keep ignores for ids
       // that reappear so broken ads are not picked again after each refetch.
       for (const ignoredId of [...ignoredAdIds]) {

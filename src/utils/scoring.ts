@@ -48,6 +48,7 @@ export type GutFeeling = {
 
 export type GutFeelingMap = Map<string, GutFeeling>;
 
+// Labels are by rank after sorting by gut score (best first), except negative scores are always "Skip".
 export const buildGutFeelingMap = (
   ads: Ad[],
   lives: number

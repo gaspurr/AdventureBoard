@@ -4,14 +4,12 @@ import { useForm } from "react-hook-form";
 export type RiskThreshold = "all" | "risky" | "moderate" | "safe";
 
 export type AdFiltersValues = {
-  search: string;
   minReward: number;
   minExpiresIn: number;
   riskThreshold: RiskThreshold;
 };
 
 export const DEFAULT_AD_FILTERS: AdFiltersValues = {
-  search: "",
   minReward: 0,
   minExpiresIn: 0,
   riskThreshold: "all",

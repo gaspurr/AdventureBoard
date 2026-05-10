@@ -14,13 +14,6 @@ export const AdFilters = ({ form, onReset }: AdFiltersProps) => {
   return (
     <Box className="ad-filters">
       <TextField
-        label="Search"
-        size="small"
-        className="ad-filters__field ad-filters__field--search"
-        {...register("search")}
-      />
-
-      <TextField
         label="Min reward"
         type="number"
         size="small"
